@@ -1,17 +1,17 @@
 <?php
-namespace reasondigital\webhookbutton\models;
+namespace reasondigital\buildsite\models;
 
 use craft\base\Model;
 
 class Settings extends Model
 {
-    public ?string $webhookUrl = null; // 👈 make nullable so validation passes initially
+	public ?string $webhookUrl = null;
 
-    public function rules(): array
-    {
-        return [
-            [['webhookUrl'], 'required'],
-            [['webhookUrl'], 'url'],
-        ];
-    }
+	public function rules(): array
+	{
+		return [
+			[['webhookUrl'], 'required'],
+			[['webhookUrl'], 'url'],
+		];
+	}
 }

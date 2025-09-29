@@ -1,8 +1,8 @@
 {% import "_includes/forms" as forms %}
 
 {{ forms.textField({
-    label: "Webhook URL",
-    instructions: "Enter the URL to fire when the button is clicked.",
+    label: "Build hook URL",
+    instructions: "Enter the URL to call to start the build",
     id: "webhookUrl",
     name: "webhookUrl",
     value: settings.webhookUrl,

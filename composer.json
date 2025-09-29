@@ -1,6 +1,6 @@
 {
-  "name": "reason/webhookbutton",
-  "description": "CraftCMS 5 plugin with a button that fires a webhook",
+  "name": "reason/buildsite",
+  "description": "CraftCMS 5 plugin that triggers a site build via webhook",
   "type": "craft-plugin",
   "require": {
     "craftcms/cms": "^5.0",
@@ -8,11 +8,12 @@
   },
   "autoload": {
     "psr-4": {
-      "reasondigital\\webhookbutton\\": "src/"
+      "reasondigital\\buildsite\\": "src/"
     }
   },
   "extra": {
-    "class": "reasondigital\\webhookbutton\\WebhookButton",
-    "handle": "webhookbutton"
+    "class": "reasondigital\\buildsite\\Buildsite",
+    "handle": "buildsite",
+    "name": "Build Site"
   }
 }

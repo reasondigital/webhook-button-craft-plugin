@@ -1,11 +1,11 @@
 {% extends "_layouts/cp" %}
-{% set title = "Webhook Button" %}
+{% set title = "Build Site" %}
 
 {% block content %}
     <div class="p-4">
-        <form method="post" action="{{ url('webhookbutton/fire') }}">
+        <form method="post" action="{{ url('buildsite/fire') }}">
             {{ csrfInput() }}
-            <button class="btn submit">Fire Webhook</button>
+            <button class="btn submit">Build now</button>
         </form>
     </div>
 {% endblock %}
